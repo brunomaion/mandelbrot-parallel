@@ -41,13 +41,15 @@ int main(){
 		}
 	}
 
-    ofstream output_file("openmp.txt"); // Cria um arquivo de saída chamado "original.txt"
+    ofstream output_file("orig.txt"); // Cria um arquivo de saída chamado "original.txt"
 
 
 		for (int r = 0; r < max_row; ++r) {
         for (int c = 0; c < max_column; ++c)
             output_file << mat[r][c]; // Escreve o elemento da matriz (r, c) no arquivo de saída
-        output_file << '\n'; // Escreve uma quebra de linha para separar as linhas da matriz no arquivo de saída
+        
+				
+			output_file << '\n'; // Escreve uma quebra de linha para separar as linhas da matriz no arquivo de saída
     }
 
     output_file.close();

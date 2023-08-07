@@ -1,7 +1,7 @@
 Arquivo;Tempo(ms)
-orig;5198
-openmp;2511
-mpi;5282
-orig;5414
-openmp;3389
-mpi;5699
+orig;5337
+openmp;2527
+mpi;5059
+orig;5038
+openmp;2547
+mpi;5066
