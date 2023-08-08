@@ -1,7 +1,6 @@
 #include <complex>
 #include <iostream>
 #include <fstream>
-#include <omp.h>
 #include <chrono> 
 
 using namespace std;
@@ -60,3 +59,5 @@ int main(){
         << "\n";
 
 }
+
+
