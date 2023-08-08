@@ -23,20 +23,17 @@ int main(){
 	#pragma omp parallel for
 	for(int r = 0; r < max_row; ++r){
 		
-		//#pragma omp parallel for
 		for(int c = 0; c < max_column; ++c){
-			complex<float> z;    // Cria um número complexo inicializado em (0,0)
-			int n = 0;           // Inicializa o contador de iterações
+			complex<float> z;    
+			int n = 0;           
 
-			// Realiza o loop enquanto a magnitude do número complexo z for menor que 2
-			// e o número de iterações for menor que o valor máximo permitido (max_n)
+
 			while(abs(z) < 2 && ++n < max_n)
 				z = pow(z, 2) + decltype(z)(
-					(float)c * 2 / max_column - 1.5,   // Parte real do ponto mapeado para o intervalo [-1.5, 0.5]
-					(float)r * 2 / max_row - 1        // Parte imaginária do ponto mapeado para o intervalo [-1, 1]
+					(float)c * 2 / max_column - 1.5,   
+					(float)r * 2 / max_row - 1        
 				);
 
-			// Atribui ao elemento da matriz (r, c) o caractere '#' se o loop completou todas as iterações, caso contrário, '.'
 			mat[r][c] = (n == max_n ? '#' : '.');
 		}
 	}
