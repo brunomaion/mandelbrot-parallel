@@ -1,3 +1,10 @@
 Arquivo;Tempo(ms)
-orig;277
-openmp;149
+orig;241
+openmp;138
+mpi;1563
+orig;238
+openmp;136
+mpi;1567
+orig;255
+openmp;162
+mpi;1553

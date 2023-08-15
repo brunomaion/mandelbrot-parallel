@@ -14,11 +14,9 @@ int main(){
 	cin >> max_column;      // Lê o número máximo de colunas da matriz
 	cin >> max_n;           // Lê o valor máximo de iterações (número máximo de iterações para cada ponto)
 
-	char **mat = (char**)malloc(sizeof(char*)*max_row);   // Aloca dinamicamente um vetor de ponteiros para armazenar as linhas da matriz
-
+	char **mat = (char**)malloc(sizeof(char*)*max_row);   // Aloca 
 	for (int i=0; i<max_row;i++)
-		mat[i]=(char*)malloc(sizeof(char)*max_column);   // Aloca dinamicamente cada linha da matriz
-
+		mat[i]=(char*)malloc(sizeof(char)*max_column);   // Aloca 
 
 	for(int r = 0; r < max_row; ++r){
 		
